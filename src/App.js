@@ -13,9 +13,10 @@ import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
-    backgroundColor: 'cyan',
-    color: props => props.color,
+    minHeight: '100vh',
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/public/Images/pexels-photo-313782.jpeg'})`,
+    backgroundRepeat: 'no-repeat',
+    width:'250px' ,
   },
   style1: {
     fontStyle: 'oblique'
@@ -46,7 +47,7 @@ function App() {
           </Router>
           <Button fullWidth variant="outlined" color="primary"> Post Job Openings </Button>
         </div>
-      <BottomNavigation fullWidth value={value} onChange={handleChange} className={classes.root}>
+      <BottomNavigation value={value} onChange={handleChange} className={classes.style1}>
       <BottomNavigationAction label="Facebook" value="Facebook" icon={<FacebookIcon />} />
       <BottomNavigationAction label="Instagram" value="Instagram" icon={<InstagramIcon />} />
       <BottomNavigationAction label="YouTube" value="YouTube" icon={<YouTubeIcon />} />
