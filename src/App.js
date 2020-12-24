@@ -53,6 +53,10 @@ function App() {
       <BottomNavigationAction label="YouTube" value="YouTube" icon={<YouTubeIcon />} />
       <BottomNavigationAction label="Email" value="Email" icon={<EmailIcon />} />
       </BottomNavigation>
+      <div>
+        <Button> Hello</Button>
+        <Button> Hello</Button>
+      </div>
     </div>  
   );
 };
