@@ -9,6 +9,9 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Job_Postings from "./Pages/Job_Postings";
+import PostJob from "./Pages/PostJob";
+import FindJob from "./Pages/FindJob";
+import Account from "./Pages/Account";
 
 const useStyles = makeStyles({
   root: {
@@ -55,15 +58,15 @@ function App() {
 
           <ReactBootStrap.NavDropdown title="Job Postings" id="collasible-nav-dropdown">
 
-          <ReactBootStrap.NavDropdown.Item href="#action/3.1">Find a Job</ReactBootStrap.NavDropdown.Item>
+          <ReactBootStrap.NavDropdown.Item href="/FindJob">Find a Job</ReactBootStrap.NavDropdown.Item>
 
         <ReactBootStrap.NavDropdown.Divider/>
-        <ReactBootStrap.NavDropdown.Item href="#action/3.2">Post a Job</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/PostJob">Post a Job</ReactBootStrap.NavDropdown.Item>
         </ReactBootStrap.NavDropdown>
 
       </ReactBootStrap.Nav>
       <ReactBootStrap.Nav>
-      <ReactBootStrap.Nav.Link href="#deets">Create an Account</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="/Account">Create an Account</ReactBootStrap.Nav.Link>
       </ReactBootStrap.Nav>
       </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
@@ -79,6 +82,18 @@ function App() {
 
     <Route path="/Job_Postings" component={Job_Postings}> 
     <Job_Postings/>
+    </Route>
+
+    <Route path="/FindJob" component={FindJob}> 
+    <FindJob/>
+    </Route>
+
+    <Route path="/PostJob" component={PostJob}> 
+    <PostJob/>
+    </Route>
+
+    <Route path="/Account" component={Account}> 
+    <Account/>
     </Route>
     </switch>
 

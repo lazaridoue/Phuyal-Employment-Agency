@@ -25,10 +25,9 @@ const Home = () => {
     return (
         <div>
         <header className="App-header">
-          <center><img alt="img" src="/Images/transparent_logo.png" width="300" height="300" className="d-inline-block align-top"/>
-          <Typography variant="h4" gutterBottom className = {useStyles.style1}> Welcome to Phuyel Employment Agency! </Typography> </center>
+          <center><img alt="img" src="/Images/Banner.png" width="500" height="250" className="d-inline-block align-top"/>
+          <br></br><Typography variant="h4" gutterBottom className = {useStyles.style1}> Welcome to Phuyel Employment Agency! </Typography> </center>
         </header>
-        
         <ButtonBases/>
         </div>
     );
