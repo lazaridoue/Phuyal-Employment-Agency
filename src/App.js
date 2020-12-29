@@ -3,9 +3,13 @@ import * as ReactBootStrap from "react-bootstrap";
 import { Button, Typography } from '@material-ui/core';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
-import { MemoryRouter as Router } from 'react-router';
 import { useHistory } from "react-router-dom";
+import {  Route, BrowserRouter as Router } from "react-router-dom";
 import Footer from "./Components/Footer";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Job_Postings from "./Pages/Job_Postings";
+
 
 const useStyles = makeStyles({
   root: {
@@ -20,6 +24,7 @@ const useStyles = makeStyles({
 });
 
 function App() {
+  
   let history = useHistory();
   const classes = useStyles();
   const [value, setValue] = React.useState('recents');
@@ -33,6 +38,13 @@ function App() {
   };
 
   return (
+  <Router>
+    <switch>
+    <Route path="/" exact component={Home}/>
+    <Route path="/About" component={About}/>
+    <Route path="/Job_Postings" component={Job_Postings}/>
+    </switch>
+
     <div className="page-container">
       <div className ="content-wrap">
 
@@ -67,14 +79,15 @@ function App() {
           <Typography variant="h4" gutterBottom className = {useStyles.style1}> Welcome to Phuyel Employment Agency! </Typography> </center>
         </header> 
       <div>
-        <Router>
+        
           <Button fullWidth variant="outlined"  onClick={handleClick}> Explore Jobs </Button>
           <Button fullWidth variant="outlined" > Post Job Openings </Button>
-        </Router>
+        
       </div>
       </div>
     <Footer />
     </div>  
+    </Router>
   );
 };
 

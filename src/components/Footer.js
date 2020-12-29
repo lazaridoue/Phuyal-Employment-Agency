@@ -35,7 +35,7 @@ const Footer = () => {
                         <div className = "row justify-content-md-center">
                         <div className="col col-lg-2">
                         <ul className ="list-unstyled">
-                            <li><IconButton label="Facebook" value="Facebook"><FacebookIcon /></IconButton></li>
+                            <li><IconButton label="Facebook" value="Facebook" href="www.google.com"><FacebookIcon /></IconButton></li>
                             <li><IconButton label="Instagram" value="Instagram"><InstagramIcon /></IconButton></li>
                         </ul>
                         </div>
