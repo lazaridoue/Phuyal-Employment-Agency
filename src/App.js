@@ -81,7 +81,7 @@ function App() {
         <Router>
           <Button fullWidth variant="outlined" color="secondary" onClick={handleClick}> Explore Jobs </Button>
           <Button fullWidth variant="outlined" color="primary"> Post Job Openings </Button>
-        </Router>
+</Router>
       </div>
 
       <div>
@@ -99,3 +99,4 @@ function App() {
 };
 
 export default App;
+   
