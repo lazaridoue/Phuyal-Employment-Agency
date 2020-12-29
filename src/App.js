@@ -10,7 +10,6 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Job_Postings from "./Pages/Job_Postings";
 
-
 const useStyles = makeStyles({
   root: {
     minHeight: '100vh',
@@ -39,25 +38,20 @@ function App() {
 
   return (
   <Router>
-    <switch>
-    <Route path="/" exact component={Home}/>
-    <Route path="/About" component={About}/>
-    <Route path="/Job_Postings" component={Job_Postings}/>
-    </switch>
 
     <div className="page-container">
       <div className ="content-wrap">
 
         <ReactBootStrap.Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-          <ReactBootStrap.Navbar.Brand href="#home">
+          <ReactBootStrap.Navbar.Brand href="/">
             <img alt="img" src="/Images/transparent_logo.png" width="80" height="80" className="d-inline-block align-top"/></ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
         <ReactBootStrap.Nav className="mr-auto">
 
-          <ReactBootStrap.Nav.Link href="#about">About Us</ReactBootStrap.Nav.Link>
+          <ReactBootStrap.Nav.Link href="/About">About Us</ReactBootStrap.Nav.Link>
 
-          <ReactBootStrap.Nav.Link href="#pricing">Explore</ReactBootStrap.Nav.Link>
+          <ReactBootStrap.Nav.Link href="/Job_Postings">Explore</ReactBootStrap.Nav.Link>
 
           <ReactBootStrap.NavDropdown title="Job Postings" id="collasible-nav-dropdown">
 
@@ -74,20 +68,26 @@ function App() {
       </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
 
-        <header className="App-header">
-          <center><img alt="img" src="/Images/transparent_logo.png" width="300" height="300" className="d-inline-block align-top"/>
-          <Typography variant="h4" gutterBottom className = {useStyles.style1}> Welcome to Phuyel Employment Agency! </Typography> </center>
-        </header> 
-      <div>
-        
-          <Button fullWidth variant="outlined"  onClick={handleClick}> Explore Jobs </Button>
-          <Button fullWidth variant="outlined" > Post Job Openings </Button>
-        
-      </div>
-      </div>
+      <switch>
+    <Route path="/" exact component={Home}>
+      <Home/>
+    </Route> 
+
+    <Route path="/About" component={About}>
+      <About/>
+     </Route> 
+
+    <Route path="/Job_Postings" component={Job_Postings}> 
+    <Job_Postings/>
+    </Route>
+    </switch>
+
+
     <Footer />
-    </div>  
+    </div> 
+    </div>
     </Router>
+  
   );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import ButtonBases from "../Components/MainButtons";
 import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -28,9 +29,7 @@ const Home = () => {
           <Typography variant="h4" gutterBottom className = {useStyles.style1}> Welcome to Phuyel Employment Agency! </Typography> </center>
         </header>
         
-        
-          <Button fullWidth variant="outlined"  onClick={handleClick}> Explore Jobs </Button>
-          <Button fullWidth variant="outlined" > Post Job Openings </Button> 
+        <ButtonBases/>
         </div>
     );
 };
