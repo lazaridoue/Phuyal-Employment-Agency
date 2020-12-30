@@ -5,12 +5,12 @@ import Typography from '@material-ui/core/Typography';
 
 const images = [
   {
-    url: '../public/Images/Emp.jpg',
+    url: '../public/Images/transparent_logo.png',
     title: 'Employers',
     width: '50%',
   },
   {
-    url: '../public/Images/hire.png',
+    url: '../public/Images/transparent_logo.png',
     title: 'Employees',
     width: '50%',
   },
@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
   image: {
     position: 'relative',
     height: 200,
-    [theme.breakpoints.down('xs')]: {
-      width: '100% !important', // Overrides inline-style
+    [theme.breakpoints.down('s')]: {
+      // width: '100% !important', // Overrides inline-style
       height: 100,
     },
     '&:hover, &$focusVisible': {

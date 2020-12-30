@@ -1,6 +1,5 @@
 import React from 'react';
 import * as ReactBootStrap from "react-bootstrap";
-import { Button, Typography } from '@material-ui/core';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from "react-router-dom";

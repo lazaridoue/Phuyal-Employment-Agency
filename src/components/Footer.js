@@ -68,7 +68,7 @@ const Footer = () => {
                 </div>
                 <div className = "row">
                     <p className="col-sm">
-                     &copy;{new Date().getFullYear()} Phuyal Employment Agency | All rights reserves | Terms of Service | Privacy  
+                     &copy;{new Date().getFullYear()} Phuyal Employment Agency | All rights reserved | Terms of Service | Privacy  
                     </p>
                 </div>
             </div>
