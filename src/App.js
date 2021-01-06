@@ -7,7 +7,7 @@ import {  Route, BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Job_Postings from "./Pages/Job_Postings";
+import JobPostings from "./Pages/JobPostings";
 import PostJob from "./Pages/PostJob";
 import FindJob from "./Pages/FindJob";
 import Account from "./Pages/Account";
@@ -35,7 +35,7 @@ function App() {
   };
   
   function handleClick() {
-    history.push("/Job_Postings.js");
+    history.push("/JobPostings.js");
   };
 
   return (
@@ -53,7 +53,7 @@ function App() {
 
           <ReactBootStrap.Nav.Link href="/About">About Us</ReactBootStrap.Nav.Link>
 
-          <ReactBootStrap.Nav.Link href="/Job_Postings">Explore</ReactBootStrap.Nav.Link>
+          <ReactBootStrap.Nav.Link href="/JobPostings">Explore</ReactBootStrap.Nav.Link>
 
           <ReactBootStrap.NavDropdown title="Job Postings" id="collasible-nav-dropdown">
 
@@ -79,8 +79,8 @@ function App() {
       <About/>
      </Route> 
 
-    <Route path="/Job_Postings" component={Job_Postings}> 
-    <Job_Postings/>
+    <Route path="/JobPostings" component={JobPostings}> 
+    <JobPostings/>
     </Route>
 
     <Route path="/FindJob" component={FindJob}> 

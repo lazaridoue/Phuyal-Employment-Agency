@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 
-const Job_Postings = () => {
+const JobPostings = () => {
     return (
         <div>
         <h4> Here are possible Job Postings </h4>
@@ -13,4 +13,4 @@ const Job_Postings = () => {
     );
 };
 
-export default Job_Postings;
+export default JobPostings;
