@@ -1,5 +1,5 @@
 import React from 'react';
-import LogIn from "../Components/LogIn.js";
+import LogIn from "../components/LogIn.js";
 
 const Account = () => {
     return (

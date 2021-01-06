@@ -4,7 +4,7 @@ import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from "react-router-dom";
 import {  Route, BrowserRouter as Router } from "react-router-dom";
-import Footer from "./Components/Footer";
+import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Job_Postings from "./Pages/Job_Postings";

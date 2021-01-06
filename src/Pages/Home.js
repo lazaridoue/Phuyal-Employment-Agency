@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import ButtonBases from "../Components/MainButtons";
+import ButtonBases from "../components/MainButtons";
 // import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
