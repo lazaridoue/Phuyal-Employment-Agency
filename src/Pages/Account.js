@@ -1,6 +1,7 @@
 import React from 'react';
 import LogIn from "../components/LogIn.js";
 
+
 const Account = () => {
     return (
         <div>

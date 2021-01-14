@@ -11,6 +11,7 @@ import JobPostings from "./Pages/JobPostings";
 import PostJob from "./Pages/PostJob";
 import FindJob from "./Pages/FindJob";
 import Account from "./Pages/Account";
+import PageNotFound from "./components/PageNotFound";
 
 const useStyles = makeStyles({
   root: {
@@ -93,6 +94,10 @@ function App() {
 
     <Route path="/Account" component={Account}> 
     <Account/>
+    </Route>
+
+    <Route path="/NotFound">
+      <PageNotFound/>
     </Route>
     </switch>
 
