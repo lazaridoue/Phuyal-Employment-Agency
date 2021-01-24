@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import * as ReactBootStrap from "react-bootstrap";
-
+import  './NavigationBar.css';
 export default class NavigationBar extends Component {
     render() {
         return (
             <div>
-            <ReactBootStrap.Navbar className="color-nav" collapseOnSelect expand="sm" bg="dark" variant="dark">
-                <ReactBootStrap.Navbar.Brand href="/"><img alt="img" src="/Images/transparent_logo.png" width="80" height="80" className="d-inline-block align-top"/></ReactBootStrap.Navbar.Brand>
+            <ReactBootStrap.Navbar className="color-nav" collapseOnSelect expand="sm" className="color-nav" variant="dark">
+                <ReactBootStrap.Navbar.Brand href="/"><img alt="img" src="/Images/Logo_white.png" width="100" height="100" className="d-inline-block align-top"/></ReactBootStrap.Navbar.Brand>
                 <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
 
