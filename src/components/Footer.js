@@ -50,14 +50,14 @@ const Footer = () => {
                         <div className = "row justify-content-md-center">
                         <div className="col col-lg-2">
                         <ul className ="list-unstyled">
-                            <li><IconButton label="Facebook" value="Facebook" href="www.google.com"><FacebookIcon /></IconButton></li>
-                            <li><IconButton label="Instagram" value="Instagram"><InstagramIcon /></IconButton></li>
+                            <li><IconButton label="Facebook" value="Facebook" onClick={() => window.open('https://www.facebook.com/Phuyal-Employment-Agency-103048218466446')}><FacebookIcon /></IconButton></li>
+                            <li><IconButton label="Instagram" value="Instagram" onClick={() => window.open('http://www.google.com')}><InstagramIcon /></IconButton></li>
                         </ul>
                         </div>
                         <div className="col col-lg-2">
                         <ul className ="list-unstyled">
-                            <li><IconButton label="YouTube" value="YouTube"><YouTubeIcon /></IconButton></li>
-                            <li><IconButton label="Email" value="Email"><EmailIcon /></IconButton></li>
+                            <li><IconButton label="YouTube" value="YouTube" onClick={() => window.open('http://www.google.com')}><YouTubeIcon /></IconButton></li>
+                            <li><IconButton label="Email" value="Email" onClick={() => window.open('http://www.google.com')} ><EmailIcon /></IconButton></li>
                         </ul>
                     </div></div>
 
